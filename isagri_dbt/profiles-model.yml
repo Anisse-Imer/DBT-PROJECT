@@ -1,0 +1,15 @@
+# This file name must be profiles.yml and stored at this location : /root/.dbt
+isagri_dbt:
+  outputs:
+    dev:
+      # In snow flake - Admin/Accounts/click the three dots/copy-paste the first part of the url https://<this-part>.snowflakecomputing.com
+      account: value-locator
+      database: dbt_exemple
+      password: <yourpassword>
+      role: dbt_exemple
+      schema: dbt_exemple
+      threads: 10
+      type: snowflake
+      user: <yourusername>
+      warehouse: dbt_
+  target: dev
