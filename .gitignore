@@ -1,20 +1,3 @@
-# Ignore compiled files and artifacts from dbt
-isagri_dbt/target/
-isagri_dbt/dbt_modules/
-isagri_dbt/logs/
-
-# Ignore dbt profile configuration (sensitive info)
-isagri_dbt/profiles.yml
-
-# Ignore Airflow specific files
-airflow/target/
-airflow/logs/
-
-# Ignore IDE specific files
-*.pyc
-__pycache__/
-*.DS_Store
-*.env
-
-# Ignore local configuration files
-*.local.yml
+target/
+dbt_packages/
+logs/

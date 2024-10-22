@@ -1,144 +1,418 @@
-[0m13:31:43.974123 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f01e8e7b1c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f01e73f88b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f01e73f8910>]}
+[0m10:38:46.162724 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b50da3250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b4f33bb80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b4f33bb20>]}
 
 
-============================== 13:31:43.978221 | 023c04b3-1493-4464-a1df-bfb673a613cb ==============================
-[0m13:31:43.978221 [info ] [MainThread]: Running with dbt=1.8.7
-[0m13:31:43.978635 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/root/.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
-[0m13:31:43.995996 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': PosixPath('/root/.dbt')}
-[0m13:31:43.996374 [info ] [MainThread]: Creating dbt configuration folder at 
-[0m13:32:20.822282 [debug] [MainThread]: Starter project path: /usr/local/lib/python3.10/dist-packages/dbt/include/starter_project
-[0m13:32:20.836109 [info ] [MainThread]: 
-Your new dbt project "isagri_dbt" was created!
-
-For more information on how to configure the profiles.yml file,
-please consult the dbt documentation here:
-
-  https://docs.getdbt.com/docs/configure-your-profile
-
-One more thing:
-
-Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
-
-  https://community.getdbt.com/
-
-Happy modeling!
-
-[0m13:32:20.836671 [info ] [MainThread]: Setting up your profile.
-[0m13:35:17.665652 [info ] [MainThread]: Profile isagri_dbt written to /root/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
-[0m13:35:17.674258 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 213.75464, "process_user_time": 0.835098, "process_kernel_time": 0.378707, "process_mem_max_rss": "105888", "process_in_blocks": "36504", "process_out_blocks": "88"}
-[0m13:35:17.675144 [debug] [MainThread]: Command `dbt init` succeeded at 13:35:17.674983 after 213.76 seconds
-[0m13:35:17.675704 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f01e8e7b1c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f01e73da680>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f01e73f89d0>]}
-[0m13:35:17.676139 [debug] [MainThread]: Flushing usage events
-[0m14:38:58.527274 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f10f154f130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f10efad7760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f10efad7700>]}
-
-
-============================== 14:38:58.529255 | b94d3a5a-721a-4eb1-b9e2-e718c296acd3 ==============================
-[0m14:38:58.529255 [info ] [MainThread]: Running with dbt=1.8.7
-[0m14:38:58.529607 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/root/.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt init', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
-[0m14:39:24.152271 [debug] [MainThread]: Starter project path: /usr/local/lib/python3.10/dist-packages/dbt/include/starter_project
-[0m14:39:24.162665 [info ] [MainThread]: 
-Your new dbt project "isagri_dbt_datateam" was created!
-
-For more information on how to configure the profiles.yml file,
-please consult the dbt documentation here:
-
-  https://docs.getdbt.com/docs/configure-your-profile
-
-One more thing:
-
-Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
-
-  https://community.getdbt.com/
-
-Happy modeling!
-
-[0m14:39:24.163123 [info ] [MainThread]: Setting up your profile.
-[0m14:42:26.680951 [error] [MainThread]: Encountered an error:
-
-[0m14:42:26.693709 [error] [MainThread]: Traceback (most recent call last):
-  File "/usr/local/lib/python3.10/dist-packages/dbt/cli/requires.py", line 138, in wrapper
-    result, success = func(*args, **kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/dbt/cli/requires.py", line 101, in wrapper
-    return func(*args, **kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/dbt/cli/main.py", line 470, in init
-    results = task.run()
-  File "/usr/local/lib/python3.10/dist-packages/dbt/task/init.py", line 347, in run
-    self.setup_profile(profile_name)
-  File "/usr/local/lib/python3.10/dist-packages/dbt/task/init.py", line 263, in setup_profile
-    self.create_profile_from_target(adapter, profile_name=profile_name)
-  File "/usr/local/lib/python3.10/dist-packages/dbt/task/init.py", line 180, in create_profile_from_target
-    self.create_profile_from_profile_template(profile_template, profile_name)
-  File "/usr/local/lib/python3.10/dist-packages/dbt/task/init.py", line 164, in create_profile_from_profile_template
-    target = self.generate_target_from_input(prompts, initial_target)
-  File "/usr/local/lib/python3.10/dist-packages/dbt/task/init.py", line 130, in generate_target_from_input
-    target[key] = click.prompt(
-  File "/usr/local/lib/python3.10/dist-packages/click/termui.py", line 164, in prompt
-    value = prompt_func(prompt)
-  File "/usr/local/lib/python3.10/dist-packages/click/termui.py", line 147, in prompt_func
-    raise Abort() from None
-click.exceptions.Abort
-
-[0m14:42:26.694555 [debug] [MainThread]: Resource report: {"command_name": "init", "command_wall_clock_time": 208.2136, "process_user_time": 0.724998, "process_kernel_time": 0.059588, "process_mem_max_rss": "105916", "process_in_blocks": "600", "process_out_blocks": "80", "command_success": false}
-[0m14:42:26.694978 [debug] [MainThread]: Command `dbt init` failed at 14:42:26.694904 after 208.21 seconds
-[0m14:42:26.695239 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f10f154f130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f10ee704520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f10ee7055d0>]}
-[0m14:42:26.695477 [debug] [MainThread]: Flushing usage events
-[0m15:45:28.293769 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb231f530d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb2304d7880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb2304d7820>]}
-
-
-============================== 15:45:28.296723 | 6e084457-d368-41eb-9e6b-df180e1f3d28 ==============================
-[0m15:45:28.296723 [info ] [MainThread]: Running with dbt=1.8.7
-[0m15:45:28.297177 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/root/.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
-[0m15:45:28.297510 [error] [MainThread]: Encountered an error:
-Runtime Error
-  No dbt_project.yml found at expected path /root/projects/ISAGRI-Airflow-AppInsights/dbt_project.yml
-  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+============================== 10:38:46.164424 | a44e9c30-690e-47b2-a2b5-ae6e274df2bd ==============================
+[0m10:38:46.164424 [info ] [MainThread]: Running with dbt=1.8.7
+[0m10:38:46.164759 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/root/.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': '/root/projects/ISAGRI-DBT-AppInsights/logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m10:38:46.337453 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a44e9c30-690e-47b2-a2b5-ae6e274df2bd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b4f2d7670>]}
+[0m10:38:46.373682 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a44e9c30-690e-47b2-a2b5-ae6e274df2bd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b4f698bb0>]}
+[0m10:38:46.374233 [info ] [MainThread]: Registered adapter: snowflake=1.8.3
+[0m10:38:46.390306 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m10:38:46.473371 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m10:38:46.473676 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m10:38:46.507703 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a44e9c30-690e-47b2-a2b5-ae6e274df2bd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b4daa9ab0>]}
+[0m10:38:46.615103 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a44e9c30-690e-47b2-a2b5-ae6e274df2bd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b501011e0>]}
+[0m10:38:46.615544 [info ] [MainThread]: Found 5 models, 9 data tests, 2 sources, 571 macros
+[0m10:38:46.615959 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a44e9c30-690e-47b2-a2b5-ae6e274df2bd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b501005e0>]}
+[0m10:38:46.617101 [info ] [MainThread]: 
+[0m10:38:46.617517 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m10:38:46.620627 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_dbt_db'
+[0m10:38:46.632901 [debug] [ThreadPool]: Using snowflake connection "list_dbt_db"
+[0m10:38:46.633606 [debug] [ThreadPool]: On list_dbt_db: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "isagri_dbt", "target_name": "dev", "connection_name": "list_dbt_db"} */
+show terse schemas in database dbt_db
+    limit 10000
+[0m10:38:46.633892 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:38:47.266042 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.632 seconds
+[0m10:38:47.267506 [debug] [ThreadPool]: On list_dbt_db: Close
+[0m10:38:47.363622 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_dbt_db_dbt_schema'
+[0m10:38:47.370244 [debug] [ThreadPool]: Using snowflake connection "list_dbt_db_dbt_schema"
+[0m10:38:47.370870 [debug] [ThreadPool]: On list_dbt_db_dbt_schema: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "isagri_dbt", "target_name": "dev", "connection_name": "list_dbt_db_dbt_schema"} */
+show objects in dbt_db.dbt_schema limit 10000
+[0m10:38:47.371200 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:38:47.853885 [debug] [ThreadPool]: SQL status: SUCCESS 7 in 0.483 seconds
+[0m10:38:47.856096 [debug] [ThreadPool]: On list_dbt_db_dbt_schema: Close
+[0m10:38:47.916342 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a44e9c30-690e-47b2-a2b5-ae6e274df2bd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b50e33970>]}
+[0m10:38:47.917374 [info ] [MainThread]: Concurrency: 10 threads (target='dev')
+[0m10:38:47.917907 [info ] [MainThread]: 
+[0m10:38:47.923635 [debug] [Thread-1 (]: Began running node model.isagri_dbt.stg_tpch_line_items
+[0m10:38:47.924123 [info ] [Thread-1 (]: 1 of 5 START sql view model dbt_schema.stg_tpch_line_items ..................... [RUN]
+[0m10:38:47.924558 [debug] [Thread-2 (]: Began running node model.isagri_dbt.stg_tpch_orders
+[0m10:38:47.925039 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_dbt_db_dbt_schema, now model.isagri_dbt.stg_tpch_line_items)
+[0m10:38:47.925478 [info ] [Thread-2 (]: 2 of 5 START sql view model dbt_schema.stg_tpch_orders ......................... [RUN]
+[0m10:38:47.925847 [debug] [Thread-1 (]: Began compiling node model.isagri_dbt.stg_tpch_line_items
+[0m10:38:47.926197 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_dbt_db, now model.isagri_dbt.stg_tpch_orders)
+[0m10:38:47.931724 [debug] [Thread-2 (]: Began compiling node model.isagri_dbt.stg_tpch_orders
+[0m10:38:47.933615 [debug] [Thread-2 (]: Writing injected SQL for node "model.isagri_dbt.stg_tpch_orders"
+[0m10:38:47.934009 [debug] [Thread-2 (]: Began executing node model.isagri_dbt.stg_tpch_orders
+[0m10:38:47.953185 [debug] [Thread-1 (]: Writing injected SQL for node "model.isagri_dbt.stg_tpch_line_items"
+[0m10:38:47.960610 [debug] [Thread-2 (]: Writing runtime sql for node "model.isagri_dbt.stg_tpch_orders"
+[0m10:38:47.961197 [debug] [Thread-1 (]: Began executing node model.isagri_dbt.stg_tpch_line_items
+[0m10:38:47.963015 [debug] [Thread-1 (]: Writing runtime sql for node "model.isagri_dbt.stg_tpch_line_items"
+[0m10:38:47.963539 [debug] [Thread-2 (]: Using snowflake connection "model.isagri_dbt.stg_tpch_orders"
+[0m10:38:47.963995 [debug] [Thread-2 (]: On model.isagri_dbt.stg_tpch_orders: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "isagri_dbt", "target_name": "dev", "node_id": "model.isagri_dbt.stg_tpch_orders"} */
+create or replace   view dbt_db.dbt_schema.stg_tpch_orders
   
-[0m15:45:28.298480 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.04575921, "process_user_time": 0.759675, "process_kernel_time": 0.109953, "process_mem_max_rss": "85060", "process_in_blocks": "280", "process_out_blocks": "16", "command_success": false}
-[0m15:45:28.298834 [debug] [MainThread]: Command `dbt run` failed at 15:45:28.298769 after 0.05 seconds
-[0m15:45:28.299051 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb231f530d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb2304d7910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb2304d7820>]}
-[0m15:45:28.299284 [debug] [MainThread]: Flushing usage events
-[0m14:29:20.495395 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3edc4fb220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3eda9e3b20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3eda9e3ac0>]}
-
-
-============================== 14:29:20.499986 | 1f1bf6ab-d71e-4f1b-90cc-50e0d218ca69 ==============================
-[0m14:29:20.499986 [info ] [MainThread]: Running with dbt=1.8.7
-[0m14:29:20.500711 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'profiles_dir': '/root/.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
-[0m14:29:20.501032 [error] [MainThread]: Encountered an error:
-Runtime Error
-  No dbt_project.yml found at expected path /root/projects/ISAGRI-Airflow-AppInsights/dbt_project.yml
-  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+   as (
+    select
+    o_orderkey as order_key,
+    o_custkey as customer_key,
+    o_orderstatus as status_code,
+    o_totalprice as total_price,
+    o_orderdate as order_date
+from
+    snowflake_sample_data.tpch_sf1.orders
+  );
+[0m10:38:47.964619 [debug] [Thread-1 (]: Using snowflake connection "model.isagri_dbt.stg_tpch_line_items"
+[0m10:38:47.964866 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m10:38:47.965241 [debug] [Thread-1 (]: On model.isagri_dbt.stg_tpch_line_items: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "isagri_dbt", "target_name": "dev", "node_id": "model.isagri_dbt.stg_tpch_line_items"} */
+create or replace   view dbt_db.dbt_schema.stg_tpch_line_items
   
-[0m14:29:20.502002 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.048005782, "process_user_time": 0.782028, "process_kernel_time": 0.223436, "process_mem_max_rss": "84916", "process_in_blocks": "47304", "process_out_blocks": "8", "command_success": false}
-[0m14:29:20.502368 [debug] [MainThread]: Command `dbt run` failed at 14:29:20.502299 after 0.05 seconds
-[0m14:29:20.502589 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3edc4fb220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3eda9e3bb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3eda9e3ac0>]}
-[0m14:29:20.502810 [debug] [MainThread]: Flushing usage events
-[0m16:47:54.413617 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fca76c871c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fca7521baf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fca7521ba90>]}
+   as (
+    select
+    md5(cast(coalesce(cast(l_orderkey as TEXT), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(l_linenumber as TEXT), '_dbt_utils_surrogate_key_null_') as TEXT)) as order_item_key,
+	l_orderkey as order_key,
+	l_partkey as part_key,
+	l_linenumber as line_number,
+	l_quantity as quantity,
+	l_extendedprice as extended_price,
+	l_discount as discount_percentage,
+	l_tax as tax_rate
+from
+    snowflake_sample_data.tpch_sf1.lineitem
+  );
+[0m10:38:47.967032 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:38:48.472954 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.506 seconds
+[0m10:38:48.480304 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.515 seconds
+[0m10:38:48.500950 [debug] [Thread-2 (]: On model.isagri_dbt.stg_tpch_orders: Close
+[0m10:38:48.502741 [debug] [Thread-1 (]: On model.isagri_dbt.stg_tpch_line_items: Close
+[0m10:38:48.556258 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a44e9c30-690e-47b2-a2b5-ae6e274df2bd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b4d112e90>]}
+[0m10:38:48.557082 [info ] [Thread-2 (]: 2 of 5 OK created sql view model dbt_schema.stg_tpch_orders .................... [[32mSUCCESS 1[0m in 0.63s]
+[0m10:38:48.557714 [debug] [Thread-2 (]: Finished running node model.isagri_dbt.stg_tpch_orders
+[0m10:38:48.560848 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a44e9c30-690e-47b2-a2b5-ae6e274df2bd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b4d016260>]}
+[0m10:38:48.561461 [info ] [Thread-1 (]: 1 of 5 OK created sql view model dbt_schema.stg_tpch_line_items ................ [[32mSUCCESS 1[0m in 0.64s]
+[0m10:38:48.562006 [debug] [Thread-1 (]: Finished running node model.isagri_dbt.stg_tpch_line_items
+[0m10:38:48.563019 [debug] [Thread-4 (]: Began running node model.isagri_dbt.int_order_items
+[0m10:38:48.563398 [info ] [Thread-4 (]: 3 of 5 START sql table model dbt_schema.int_order_items ........................ [RUN]
+[0m10:38:48.563841 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.isagri_dbt.int_order_items'
+[0m10:38:48.564110 [debug] [Thread-4 (]: Began compiling node model.isagri_dbt.int_order_items
+[0m10:38:48.567207 [debug] [Thread-4 (]: Writing injected SQL for node "model.isagri_dbt.int_order_items"
+[0m10:38:48.567663 [debug] [Thread-4 (]: Began executing node model.isagri_dbt.int_order_items
+[0m10:38:48.580669 [debug] [Thread-4 (]: Writing runtime sql for node "model.isagri_dbt.int_order_items"
+[0m10:38:48.581521 [debug] [Thread-4 (]: Using snowflake connection "model.isagri_dbt.int_order_items"
+[0m10:38:48.581831 [debug] [Thread-4 (]: On model.isagri_dbt.int_order_items: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "isagri_dbt", "target_name": "dev", "node_id": "model.isagri_dbt.int_order_items"} */
+create or replace transient table dbt_db.dbt_schema.int_order_items
+         as
+        (select
+    line_item.order_item_key,
+    line_item.part_key,
+    line_item.line_number,
+    line_item.extended_price,
+    line_item.discount_percentage,
+    
+    (-1 * line_item.extended_price * line_item.discount_percentage)::numeric(16, 2)
+ as item_discount_amount,
+    orders.order_key,
+    orders.customer_key,
+    orders.order_date
+from 
+    dbt_db.dbt_schema.stg_tpch_orders as orders
+join
+    dbt_db.dbt_schema.stg_tpch_line_items as line_item
+        on orders.order_key = line_item.order_key
+order by
+    orders.order_date
+        );
+[0m10:38:48.582072 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m10:38:54.079638 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 5.497 seconds
+[0m10:38:54.083694 [debug] [Thread-4 (]: On model.isagri_dbt.int_order_items: Close
+[0m10:38:54.154472 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a44e9c30-690e-47b2-a2b5-ae6e274df2bd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b4d112fb0>]}
+[0m10:38:54.155955 [info ] [Thread-4 (]: 3 of 5 OK created sql table model dbt_schema.int_order_items ................... [[32mSUCCESS 1[0m in 5.59s]
+[0m10:38:54.157098 [debug] [Thread-4 (]: Finished running node model.isagri_dbt.int_order_items
+[0m10:38:54.158860 [debug] [Thread-6 (]: Began running node model.isagri_dbt.int_order_items_summary
+[0m10:38:54.160064 [info ] [Thread-6 (]: 4 of 5 START sql table model dbt_schema.int_order_items_summary ................ [RUN]
+[0m10:38:54.160949 [debug] [Thread-6 (]: Acquiring new snowflake connection 'model.isagri_dbt.int_order_items_summary'
+[0m10:38:54.161459 [debug] [Thread-6 (]: Began compiling node model.isagri_dbt.int_order_items_summary
+[0m10:38:54.165411 [debug] [Thread-6 (]: Writing injected SQL for node "model.isagri_dbt.int_order_items_summary"
+[0m10:38:54.166147 [debug] [Thread-6 (]: Began executing node model.isagri_dbt.int_order_items_summary
+[0m10:38:54.170258 [debug] [Thread-6 (]: Writing runtime sql for node "model.isagri_dbt.int_order_items_summary"
+[0m10:38:54.171418 [debug] [Thread-6 (]: Using snowflake connection "model.isagri_dbt.int_order_items_summary"
+[0m10:38:54.173040 [debug] [Thread-6 (]: On model.isagri_dbt.int_order_items_summary: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "isagri_dbt", "target_name": "dev", "node_id": "model.isagri_dbt.int_order_items_summary"} */
+create or replace transient table dbt_db.dbt_schema.int_order_items_summary
+         as
+        (select
+    order_key,
+    sum(extended_price) as gross_item_sales_amount,
+    sum(item_discount_amount) as item_discount_amount
+from
+    dbt_db.dbt_schema.int_order_items
+group by
+    order_key
+        );
+[0m10:38:54.173589 [debug] [Thread-6 (]: Opening a new connection, currently in state init
+[0m10:38:55.256243 [debug] [Thread-6 (]: SQL status: SUCCESS 1 in 1.082 seconds
+[0m10:38:55.260464 [debug] [Thread-6 (]: On model.isagri_dbt.int_order_items_summary: Close
+[0m10:38:55.337444 [debug] [Thread-6 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a44e9c30-690e-47b2-a2b5-ae6e274df2bd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b4c6cee30>]}
+[0m10:38:55.338046 [info ] [Thread-6 (]: 4 of 5 OK created sql table model dbt_schema.int_order_items_summary ........... [[32mSUCCESS 1[0m in 1.18s]
+[0m10:38:55.338490 [debug] [Thread-6 (]: Finished running node model.isagri_dbt.int_order_items_summary
+[0m10:38:55.339195 [debug] [Thread-8 (]: Began running node model.isagri_dbt.fct_orders
+[0m10:38:55.339558 [info ] [Thread-8 (]: 5 of 5 START sql table model dbt_schema.fct_orders ............................. [RUN]
+[0m10:38:55.339917 [debug] [Thread-8 (]: Acquiring new snowflake connection 'model.isagri_dbt.fct_orders'
+[0m10:38:55.340138 [debug] [Thread-8 (]: Began compiling node model.isagri_dbt.fct_orders
+[0m10:38:55.342231 [debug] [Thread-8 (]: Writing injected SQL for node "model.isagri_dbt.fct_orders"
+[0m10:38:55.342597 [debug] [Thread-8 (]: Began executing node model.isagri_dbt.fct_orders
+[0m10:38:55.344188 [debug] [Thread-8 (]: Writing runtime sql for node "model.isagri_dbt.fct_orders"
+[0m10:38:55.344765 [debug] [Thread-8 (]: Using snowflake connection "model.isagri_dbt.fct_orders"
+[0m10:38:55.345007 [debug] [Thread-8 (]: On model.isagri_dbt.fct_orders: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "isagri_dbt", "target_name": "dev", "node_id": "model.isagri_dbt.fct_orders"} */
+create or replace transient table dbt_db.dbt_schema.fct_orders
+         as
+        (select
+    orders.*,
+    order_items_summary.gross_item_sales_amount,
+    order_items_summary.item_discount_amount
+from
+    dbt_db.dbt_schema.stg_tpch_orders as orders
+join
+    dbt_db.dbt_schema.int_order_items_summary as order_item_summary
+        on orders.order_key = order_item_summary.order_key
+order by order_date
+        );
+[0m10:38:55.345223 [debug] [Thread-8 (]: Opening a new connection, currently in state init
+[0m10:38:55.649167 [debug] [Thread-8 (]: Snowflake adapter: Snowflake query id: 01b7db46-0001-3add-0000-e009000260d2
+[0m10:38:55.650176 [debug] [Thread-8 (]: Snowflake adapter: Snowflake error: 000904 (42000): SQL compilation error: error line 5 at position 4
+invalid identifier 'ORDER_ITEMS_SUMMARY.GROSS_ITEM_SALES_AMOUNT'
+[0m10:38:55.651239 [debug] [Thread-8 (]: On model.isagri_dbt.fct_orders: Close
+[0m10:38:55.728843 [debug] [Thread-8 (]: Database Error in model fct_orders (models/marts/fct_orders.sql)
+  000904 (42000): SQL compilation error: error line 5 at position 4
+  invalid identifier 'ORDER_ITEMS_SUMMARY.GROSS_ITEM_SALES_AMOUNT'
+  compiled code at target/run/isagri_dbt/models/marts/fct_orders.sql
+[0m10:38:55.729652 [debug] [Thread-8 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a44e9c30-690e-47b2-a2b5-ae6e274df2bd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b4c6c2f80>]}
+[0m10:38:55.730453 [error] [Thread-8 (]: 5 of 5 ERROR creating sql table model dbt_schema.fct_orders .................... [[31mERROR[0m in 0.39s]
+[0m10:38:55.731251 [debug] [Thread-8 (]: Finished running node model.isagri_dbt.fct_orders
+[0m10:38:55.734318 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m10:38:55.734716 [debug] [MainThread]: Connection 'model.isagri_dbt.stg_tpch_orders' was properly closed.
+[0m10:38:55.735054 [debug] [MainThread]: Connection 'model.isagri_dbt.stg_tpch_line_items' was properly closed.
+[0m10:38:55.735304 [debug] [MainThread]: Connection 'model.isagri_dbt.int_order_items' was properly closed.
+[0m10:38:55.735537 [debug] [MainThread]: Connection 'model.isagri_dbt.int_order_items_summary' was properly closed.
+[0m10:38:55.735764 [debug] [MainThread]: Connection 'model.isagri_dbt.fct_orders' was properly closed.
+[0m10:38:55.736116 [info ] [MainThread]: 
+[0m10:38:55.736484 [info ] [MainThread]: Finished running 2 view models, 3 table models in 0 hours 0 minutes and 9.12 seconds (9.12s).
+[0m10:38:55.737371 [debug] [MainThread]: Command end result
+[0m10:38:55.759575 [info ] [MainThread]: 
+[0m10:38:55.759977 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m10:38:55.760221 [info ] [MainThread]: 
+[0m10:38:55.760483 [error] [MainThread]:   Database Error in model fct_orders (models/marts/fct_orders.sql)
+  000904 (42000): SQL compilation error: error line 5 at position 4
+  invalid identifier 'ORDER_ITEMS_SUMMARY.GROSS_ITEM_SALES_AMOUNT'
+  compiled code at target/run/isagri_dbt/models/marts/fct_orders.sql
+[0m10:38:55.760728 [info ] [MainThread]: 
+[0m10:38:55.760956 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=1 SKIP=0 TOTAL=5
+[0m10:38:55.761497 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 9.628741, "process_user_time": 1.46027, "process_kernel_time": 0.121689, "process_mem_max_rss": "132544", "process_out_blocks": "2592", "command_success": false, "process_in_blocks": "0"}
+[0m10:38:55.761906 [debug] [MainThread]: Command `dbt run` failed at 10:38:55.761841 after 9.63 seconds
+[0m10:38:55.762168 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b50da3250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b4f69b6a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b4c6eff40>]}
+[0m10:38:55.762408 [debug] [MainThread]: Flushing usage events
+[0m10:39:38.433174 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f148306f220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1481563b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1481563af0>]}
 
 
-============================== 16:47:54.415234 | 4bbd356d-e0d3-4b35-8277-f2310796a1cf ==============================
-[0m16:47:54.415234 [info ] [MainThread]: Running with dbt=1.8.7
-[0m16:47:54.415722 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/root/.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt run -s fct_orders', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
-[0m16:47:54.416009 [error] [MainThread]: Encountered an error:
-Runtime Error
-  No dbt_project.yml found at expected path /root/projects/ISAGRI-Airflow-AppInsights/dbt_project.yml
-  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+============================== 10:39:38.435080 | b2e6162d-9041-497d-823a-1a064002d9b1 ==============================
+[0m10:39:38.435080 [info ] [MainThread]: Running with dbt=1.8.7
+[0m10:39:38.435396 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/root/projects/ISAGRI-DBT-AppInsights/logs', 'debug': 'False', 'profiles_dir': '/root/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m10:39:38.604371 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b2e6162d-9041-497d-823a-1a064002d9b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f14802de290>]}
+[0m10:39:38.638832 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b2e6162d-9041-497d-823a-1a064002d9b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f14818c1780>]}
+[0m10:39:38.639476 [info ] [MainThread]: Registered adapter: snowflake=1.8.3
+[0m10:39:38.649682 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m10:39:38.733542 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m10:39:38.733984 [debug] [MainThread]: Partial parsing: updated file: isagri_dbt://models/marts/fct_orders.sql
+[0m10:39:38.898719 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `tests` config has been renamed to `data_tests`. Please see
+https://docs.getdbt.com/docs/build/data-tests#new-data_tests-syntax for more
+information.
+[0m10:39:38.899122 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'b2e6162d-9041-497d-823a-1a064002d9b1', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f14802de2f0>]}
+[0m10:39:39.035145 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b2e6162d-9041-497d-823a-1a064002d9b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f147d400130>]}
+[0m10:39:39.106655 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b2e6162d-9041-497d-823a-1a064002d9b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f147d401720>]}
+[0m10:39:39.107029 [info ] [MainThread]: Found 5 models, 9 data tests, 2 sources, 571 macros
+[0m10:39:39.107305 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b2e6162d-9041-497d-823a-1a064002d9b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f147d4020e0>]}
+[0m10:39:39.108331 [info ] [MainThread]: 
+[0m10:39:39.108713 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m10:39:39.111800 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_dbt_db'
+[0m10:39:39.120621 [debug] [ThreadPool]: Using snowflake connection "list_dbt_db"
+[0m10:39:39.121137 [debug] [ThreadPool]: On list_dbt_db: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "isagri_dbt", "target_name": "dev", "connection_name": "list_dbt_db"} */
+show terse schemas in database dbt_db
+    limit 10000
+[0m10:39:39.121390 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:39:39.514279 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.393 seconds
+[0m10:39:39.516742 [debug] [ThreadPool]: On list_dbt_db: Close
+[0m10:39:39.583760 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dbt_db, now list_dbt_db_dbt_schema)
+[0m10:39:39.589298 [debug] [ThreadPool]: Using snowflake connection "list_dbt_db_dbt_schema"
+[0m10:39:39.589636 [debug] [ThreadPool]: On list_dbt_db_dbt_schema: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "isagri_dbt", "target_name": "dev", "connection_name": "list_dbt_db_dbt_schema"} */
+show objects in dbt_db.dbt_schema limit 10000
+[0m10:39:39.589838 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m10:39:39.827810 [debug] [ThreadPool]: SQL status: SUCCESS 7 in 0.238 seconds
+[0m10:39:39.831282 [debug] [ThreadPool]: On list_dbt_db_dbt_schema: Close
+[0m10:39:39.892790 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b2e6162d-9041-497d-823a-1a064002d9b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f14802dfbb0>]}
+[0m10:39:39.894099 [info ] [MainThread]: Concurrency: 10 threads (target='dev')
+[0m10:39:39.894837 [info ] [MainThread]: 
+[0m10:39:39.902090 [debug] [Thread-1 (]: Began running node model.isagri_dbt.stg_tpch_line_items
+[0m10:39:39.902908 [debug] [Thread-2 (]: Began running node model.isagri_dbt.stg_tpch_orders
+[0m10:39:39.903983 [info ] [Thread-1 (]: 1 of 5 START sql view model dbt_schema.stg_tpch_line_items ..................... [RUN]
+[0m10:39:39.905071 [info ] [Thread-2 (]: 2 of 5 START sql view model dbt_schema.stg_tpch_orders ......................... [RUN]
+[0m10:39:39.905970 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_dbt_db_dbt_schema, now model.isagri_dbt.stg_tpch_line_items)
+[0m10:39:39.906952 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.isagri_dbt.stg_tpch_orders'
+[0m10:39:39.907630 [debug] [Thread-1 (]: Began compiling node model.isagri_dbt.stg_tpch_line_items
+[0m10:39:39.908264 [debug] [Thread-2 (]: Began compiling node model.isagri_dbt.stg_tpch_orders
+[0m10:39:39.922412 [debug] [Thread-2 (]: Writing injected SQL for node "model.isagri_dbt.stg_tpch_orders"
+[0m10:39:39.927393 [debug] [Thread-1 (]: Writing injected SQL for node "model.isagri_dbt.stg_tpch_line_items"
+[0m10:39:39.927926 [debug] [Thread-2 (]: Began executing node model.isagri_dbt.stg_tpch_orders
+[0m10:39:39.938744 [debug] [Thread-1 (]: Began executing node model.isagri_dbt.stg_tpch_line_items
+[0m10:39:39.951078 [debug] [Thread-2 (]: Writing runtime sql for node "model.isagri_dbt.stg_tpch_orders"
+[0m10:39:39.952641 [debug] [Thread-1 (]: Writing runtime sql for node "model.isagri_dbt.stg_tpch_line_items"
+[0m10:39:39.953590 [debug] [Thread-2 (]: Using snowflake connection "model.isagri_dbt.stg_tpch_orders"
+[0m10:39:39.954001 [debug] [Thread-2 (]: On model.isagri_dbt.stg_tpch_orders: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "isagri_dbt", "target_name": "dev", "node_id": "model.isagri_dbt.stg_tpch_orders"} */
+create or replace   view dbt_db.dbt_schema.stg_tpch_orders
   
-[0m16:47:54.416532 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.052732605, "process_user_time": 0.689397, "process_kernel_time": 0.009991, "process_mem_max_rss": "84936", "process_in_blocks": "16", "process_out_blocks": "8", "command_success": false}
-[0m16:47:54.416868 [debug] [MainThread]: Command `dbt run` failed at 16:47:54.416805 after 0.05 seconds
-[0m16:47:54.417083 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fca76c871c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fca7521bb80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fca7521ba90>]}
-[0m16:47:54.417292 [debug] [MainThread]: Flushing usage events
-[0m14:14:25.699696 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f0f45f130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f0d94ba30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f0d94b9d0>]}
-
-
-============================== 14:14:25.703155 | daa52180-e7a3-4e5e-8f08-32f74df413ee ==============================
-[0m14:14:25.703155 [info ] [MainThread]: Running with dbt=1.8.7
-[0m14:14:25.703607 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/root/.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt test', 'send_anonymous_usage_stats': 'True'}
-[0m14:14:25.703896 [error] [MainThread]: Encountered an error:
-Runtime Error
-  No dbt_project.yml found at expected path /root/projects/ISAGRI-Airflow-AppInsights/dbt_project.yml
-  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+   as (
+    select
+    o_orderkey as order_key,
+    o_custkey as customer_key,
+    o_orderstatus as status_code,
+    o_totalprice as total_price,
+    o_orderdate as order_date
+from
+    snowflake_sample_data.tpch_sf1.orders
+  );
+[0m10:39:39.954667 [debug] [Thread-1 (]: Using snowflake connection "model.isagri_dbt.stg_tpch_line_items"
+[0m10:39:39.955596 [debug] [Thread-1 (]: On model.isagri_dbt.stg_tpch_line_items: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "isagri_dbt", "target_name": "dev", "node_id": "model.isagri_dbt.stg_tpch_line_items"} */
+create or replace   view dbt_db.dbt_schema.stg_tpch_line_items
   
-[0m14:14:25.705591 [debug] [MainThread]: Resource report: {"command_name": "test", "command_wall_clock_time": 0.03966705, "process_user_time": 0.763714, "process_kernel_time": 0.050914, "process_mem_max_rss": "84936", "process_in_blocks": "43232", "process_out_blocks": "16", "command_success": false}
-[0m14:14:25.705922 [debug] [MainThread]: Command `dbt test` failed at 14:14:25.705841 after 0.04 seconds
-[0m14:14:25.706144 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f0f45f130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f0d94bac0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f0d94b9d0>]}
-[0m14:14:25.706378 [debug] [MainThread]: Flushing usage events
+   as (
+    select
+    md5(cast(coalesce(cast(l_orderkey as TEXT), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(l_linenumber as TEXT), '_dbt_utils_surrogate_key_null_') as TEXT)) as order_item_key,
+	l_orderkey as order_key,
+	l_partkey as part_key,
+	l_linenumber as line_number,
+	l_quantity as quantity,
+	l_extendedprice as extended_price,
+	l_discount as discount_percentage,
+	l_tax as tax_rate
+from
+    snowflake_sample_data.tpch_sf1.lineitem
+  );
+[0m10:39:39.955069 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m10:39:39.955934 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:39:40.345876 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.391 seconds
+[0m10:39:40.372354 [debug] [Thread-2 (]: On model.isagri_dbt.stg_tpch_orders: Close
+[0m10:39:40.373327 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.417 seconds
+[0m10:39:40.375212 [debug] [Thread-1 (]: On model.isagri_dbt.stg_tpch_line_items: Close
+[0m10:39:40.428661 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b2e6162d-9041-497d-823a-1a064002d9b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f147c67ed70>]}
+[0m10:39:40.429354 [info ] [Thread-1 (]: 1 of 5 OK created sql view model dbt_schema.stg_tpch_line_items ................ [[32mSUCCESS 1[0m in 0.52s]
+[0m10:39:40.430270 [debug] [Thread-1 (]: Finished running node model.isagri_dbt.stg_tpch_line_items
+[0m10:39:40.431265 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b2e6162d-9041-497d-823a-1a064002d9b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f14802df4f0>]}
+[0m10:39:40.431722 [info ] [Thread-2 (]: 2 of 5 OK created sql view model dbt_schema.stg_tpch_orders .................... [[32mSUCCESS 1[0m in 0.52s]
+[0m10:39:40.432125 [debug] [Thread-2 (]: Finished running node model.isagri_dbt.stg_tpch_orders
+[0m10:39:40.432873 [debug] [Thread-4 (]: Began running node model.isagri_dbt.int_order_items
+[0m10:39:40.433292 [info ] [Thread-4 (]: 3 of 5 START sql table model dbt_schema.int_order_items ........................ [RUN]
+[0m10:39:40.433686 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.isagri_dbt.int_order_items'
+[0m10:39:40.433934 [debug] [Thread-4 (]: Began compiling node model.isagri_dbt.int_order_items
+[0m10:39:40.437214 [debug] [Thread-4 (]: Writing injected SQL for node "model.isagri_dbt.int_order_items"
+[0m10:39:40.437621 [debug] [Thread-4 (]: Began executing node model.isagri_dbt.int_order_items
+[0m10:39:40.449552 [debug] [Thread-4 (]: Writing runtime sql for node "model.isagri_dbt.int_order_items"
+[0m10:39:40.450370 [debug] [Thread-4 (]: Using snowflake connection "model.isagri_dbt.int_order_items"
+[0m10:39:40.450637 [debug] [Thread-4 (]: On model.isagri_dbt.int_order_items: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "isagri_dbt", "target_name": "dev", "node_id": "model.isagri_dbt.int_order_items"} */
+create or replace transient table dbt_db.dbt_schema.int_order_items
+         as
+        (select
+    line_item.order_item_key,
+    line_item.part_key,
+    line_item.line_number,
+    line_item.extended_price,
+    line_item.discount_percentage,
+    
+    (-1 * line_item.extended_price * line_item.discount_percentage)::numeric(16, 2)
+ as item_discount_amount,
+    orders.order_key,
+    orders.customer_key,
+    orders.order_date
+from 
+    dbt_db.dbt_schema.stg_tpch_orders as orders
+join
+    dbt_db.dbt_schema.stg_tpch_line_items as line_item
+        on orders.order_key = line_item.order_key
+order by
+    orders.order_date
+        );
+[0m10:39:40.450974 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m10:39:45.745241 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 5.294 seconds
+[0m10:39:45.752273 [debug] [Thread-4 (]: On model.isagri_dbt.int_order_items: Close
+[0m10:39:45.817591 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b2e6162d-9041-497d-823a-1a064002d9b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f147d3d5d80>]}
+[0m10:39:45.819694 [info ] [Thread-4 (]: 3 of 5 OK created sql table model dbt_schema.int_order_items ................... [[32mSUCCESS 1[0m in 5.38s]
+[0m10:39:45.821311 [debug] [Thread-4 (]: Finished running node model.isagri_dbt.int_order_items
+[0m10:39:45.824546 [debug] [Thread-6 (]: Began running node model.isagri_dbt.int_order_items_summary
+[0m10:39:45.826596 [info ] [Thread-6 (]: 4 of 5 START sql table model dbt_schema.int_order_items_summary ................ [RUN]
+[0m10:39:45.828093 [debug] [Thread-6 (]: Acquiring new snowflake connection 'model.isagri_dbt.int_order_items_summary'
+[0m10:39:45.829127 [debug] [Thread-6 (]: Began compiling node model.isagri_dbt.int_order_items_summary
+[0m10:39:45.841496 [debug] [Thread-6 (]: Writing injected SQL for node "model.isagri_dbt.int_order_items_summary"
+[0m10:39:45.842450 [debug] [Thread-6 (]: Began executing node model.isagri_dbt.int_order_items_summary
+[0m10:39:45.845407 [debug] [Thread-6 (]: Writing runtime sql for node "model.isagri_dbt.int_order_items_summary"
+[0m10:39:45.846260 [debug] [Thread-6 (]: Using snowflake connection "model.isagri_dbt.int_order_items_summary"
+[0m10:39:45.846774 [debug] [Thread-6 (]: On model.isagri_dbt.int_order_items_summary: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "isagri_dbt", "target_name": "dev", "node_id": "model.isagri_dbt.int_order_items_summary"} */
+create or replace transient table dbt_db.dbt_schema.int_order_items_summary
+         as
+        (select
+    order_key,
+    sum(extended_price) as gross_item_sales_amount,
+    sum(item_discount_amount) as item_discount_amount
+from
+    dbt_db.dbt_schema.int_order_items
+group by
+    order_key
+        );
+[0m10:39:45.847015 [debug] [Thread-6 (]: Opening a new connection, currently in state init
+[0m10:39:47.136634 [debug] [Thread-6 (]: SQL status: SUCCESS 1 in 1.289 seconds
+[0m10:39:47.143935 [debug] [Thread-6 (]: On model.isagri_dbt.int_order_items_summary: Close
+[0m10:39:47.196562 [debug] [Thread-6 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b2e6162d-9041-497d-823a-1a064002d9b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f147c6e7cd0>]}
+[0m10:39:47.197441 [info ] [Thread-6 (]: 4 of 5 OK created sql table model dbt_schema.int_order_items_summary ........... [[32mSUCCESS 1[0m in 1.37s]
+[0m10:39:47.198008 [debug] [Thread-6 (]: Finished running node model.isagri_dbt.int_order_items_summary
+[0m10:39:47.199669 [debug] [Thread-8 (]: Began running node model.isagri_dbt.fct_orders
+[0m10:39:47.200171 [info ] [Thread-8 (]: 5 of 5 START sql table model dbt_schema.fct_orders ............................. [RUN]
+[0m10:39:47.200669 [debug] [Thread-8 (]: Acquiring new snowflake connection 'model.isagri_dbt.fct_orders'
+[0m10:39:47.200980 [debug] [Thread-8 (]: Began compiling node model.isagri_dbt.fct_orders
+[0m10:39:47.205623 [debug] [Thread-8 (]: Writing injected SQL for node "model.isagri_dbt.fct_orders"
+[0m10:39:47.206097 [debug] [Thread-8 (]: Began executing node model.isagri_dbt.fct_orders
+[0m10:39:47.208298 [debug] [Thread-8 (]: Writing runtime sql for node "model.isagri_dbt.fct_orders"
+[0m10:39:47.209057 [debug] [Thread-8 (]: Using snowflake connection "model.isagri_dbt.fct_orders"
+[0m10:39:47.209343 [debug] [Thread-8 (]: On model.isagri_dbt.fct_orders: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "isagri_dbt", "target_name": "dev", "node_id": "model.isagri_dbt.fct_orders"} */
+create or replace transient table dbt_db.dbt_schema.fct_orders
+         as
+        (select
+    orders.*,
+    order_items_summary.gross_item_sales_amount,
+    order_items_summary.item_discount_amount
+from
+    dbt_db.dbt_schema.stg_tpch_orders as orders
+join
+    dbt_db.dbt_schema.int_order_items_summary as order_items_summary
+        on orders.order_key = order_items_summary.order_key
+order by order_date
+        );
+[0m10:39:47.209591 [debug] [Thread-8 (]: Opening a new connection, currently in state init
+[0m10:39:48.948730 [debug] [Thread-8 (]: SQL status: SUCCESS 1 in 1.732 seconds
+[0m10:39:48.952879 [debug] [Thread-8 (]: On model.isagri_dbt.fct_orders: Close
+[0m10:39:49.009792 [debug] [Thread-8 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b2e6162d-9041-497d-823a-1a064002d9b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f147c8d0a60>]}
+[0m10:39:49.011265 [info ] [Thread-8 (]: 5 of 5 OK created sql table model dbt_schema.fct_orders ........................ [[32mSUCCESS 1[0m in 1.81s]
+[0m10:39:49.012246 [debug] [Thread-8 (]: Finished running node model.isagri_dbt.fct_orders
+[0m10:39:49.017105 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m10:39:49.017696 [debug] [MainThread]: Connection 'model.isagri_dbt.stg_tpch_line_items' was properly closed.
+[0m10:39:49.018075 [debug] [MainThread]: Connection 'model.isagri_dbt.stg_tpch_orders' was properly closed.
+[0m10:39:49.018416 [debug] [MainThread]: Connection 'model.isagri_dbt.int_order_items' was properly closed.
+[0m10:39:49.018724 [debug] [MainThread]: Connection 'model.isagri_dbt.int_order_items_summary' was properly closed.
+[0m10:39:49.019031 [debug] [MainThread]: Connection 'model.isagri_dbt.fct_orders' was properly closed.
+[0m10:39:49.019923 [info ] [MainThread]: 
+[0m10:39:49.020547 [info ] [MainThread]: Finished running 2 view models, 3 table models in 0 hours 0 minutes and 9.91 seconds (9.91s).
+[0m10:39:49.031688 [debug] [MainThread]: Command end result
+[0m10:39:49.115503 [info ] [MainThread]: 
+[0m10:39:49.115883 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m10:39:49.116121 [info ] [MainThread]: 
+[0m10:39:49.116358 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=0 SKIP=0 TOTAL=5
+[0m10:39:49.116964 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 10.712357, "process_user_time": 1.941567, "process_kernel_time": 0.05033, "process_mem_max_rss": "138508", "process_out_blocks": "3800", "process_in_blocks": "0"}
+[0m10:39:49.117352 [debug] [MainThread]: Command `dbt run` succeeded at 10:39:49.117268 after 10.71 seconds
+[0m10:39:49.117607 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f148306f220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f147d4cdd80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f147c7f34f0>]}
+[0m10:39:49.117841 [debug] [MainThread]: Flushing usage events
